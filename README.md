@@ -1,17 +1,21 @@
 # Memory-Verification-using-UVM-and-SystemVerilog
 This project focuses on The Verification of a single port ram Using Class Based Environment and UVM. 
 
- ![image](https://github.com/OmniaMohamed12/Memory-Verification-using-UVM-and-SystemVerilog/assets/110364388/9b1a5413-118e-4978-92cc-35d3aea4f398)
+<img width="817" height="316" alt="sram" src="https://github.com/user-attachments/assets/2e4c5ff9-1856-4593-9199-7faef4bb5b35" />
+
  
-![image](https://github.com/OmniaMohamed12/Memory-Verification-using-UVM-and-SystemVerilog/assets/110364388/5cc65d3c-a69a-431b-9480-e7ba23fe2edf)
+<img width="919" height="429" alt="2" src="https://github.com/user-attachments/assets/75c0ecbe-8bcd-4681-835b-e2496f2548d3" />
+
 
 ## UVM Architecture
 
-![ram uvm env - Page 1 (2)](https://github.com/OmniaMohamed12/Memory-Verification-using-UVM-and-SystemVerilog/assets/110364388/36022ee0-4c20-4a52-96ef-6084bae4fa8d)
+<img width="4355" height="3171" alt="3" src="https://github.com/user-attachments/assets/2c112ae6-9ab4-4360-aa5d-b33f68df8e75" />
+
 
 ## Class Based Env
 
-![memory class based env](https://github.com/OmniaMohamed12/Memory-Verification-using-UVM-and-SystemVerilog/assets/110364388/31e663db-3744-4bd8-b9bd-325c94029327)
+<img width="3763" height="2565" alt="4" src="https://github.com/user-attachments/assets/2acb9ab2-f7d4-4ea2-badd-b61fb9a5df53" />
+
 
 ## Compilation and Simulation Steps
 
