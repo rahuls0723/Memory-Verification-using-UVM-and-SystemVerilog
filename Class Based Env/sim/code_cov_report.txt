@@ -1,0 +1,113 @@
+Coverage Report by DU with details
+
+=================================================================================
+=== Design Unit: work.single_port_ram
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         6         6         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for Design Unit work.single_port_ram
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File single_port_ram.sv
+------------------------------------IF Branch------------------------------------
+    13                                       387     Count coming in to IF
+    13              1                          2         if (!Resetn)begin
+    19              1                        385         else begin
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    20                                       385     Count coming in to IF
+    20              1                        384             if(Enable)begin
+                                               1     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    21                                       384     Count coming in to IF
+    21              1                        192                 if(Write_en) begin
+    25              1                        192                 else begin
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       9         9         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for Design Unit work.single_port_ram --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File single_port_ram.sv
+    1                                                module single_port_ram(
+    2                                                    input wire Clock,
+    3                                                    input wire Resetn,
+    4                                                    input wire Enable,
+    5                                                    input wire Write_en,
+    6                                                    input wire [3:0] Address,
+    7                                                    input wire [31:0] Data_in,
+    8                                                    output reg [31:0] Data_out,
+    9                                                    output reg Valid_out
+    10                                               );
+    11                                               reg [31:0] memory[0:15];
+    12              1                        387     always@(posedge Clock or negedge Resetn)begin
+    13                                                   if (!Resetn)begin
+    14              1                         34             foreach(memory[i])
+    15              1                         32                 memory[i] <= 0;
+    16              1                          2             Data_out <= 0;
+    17              1                          2             Valid_out <= 0;
+    18                                                   end 
+    19                                                   else begin
+    20                                                       if(Enable)begin
+    21                                                           if(Write_en) begin
+    22              1                        192                     memory[Address] <= Data_in;
+    23              1                        192                     Valid_out <= 0;
+    24                                                           end
+    25                                                           else begin
+    26              1                        192                     Data_out <= memory[Address];
+    27              1                        192                     Valid_out <= 1;
+
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                         66        50        16    75.75%
+
+================================Toggle Details================================
+
+Toggle Coverage for Design Unit work.single_port_ram
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                    Data_out[0-11]           1           1      100.00 
+                                      Data_out[12]           0           0        0.00 
+                                      Data_out[13]           1           1      100.00 
+                                      Data_out[14]           0           0        0.00 
+                                      Data_out[15]           1           1      100.00 
+                                      Data_out[16]           0           0        0.00 
+                                   Data_out[17-22]           1           1      100.00 
+                                      Data_out[23]           0           0        0.00 
+                                      Data_out[24]           1           1      100.00 
+                                   Data_out[25-26]           0           0        0.00 
+                                      Data_out[27]           1           1      100.00 
+                                      Data_out[28]           0           0        0.00 
+                                      Data_out[29]           1           1      100.00 
+                                      Data_out[30]           0           0        0.00 
+                                      Data_out[31]           1           1      100.00 
+                                         Valid_out           1           1      100.00 
+
+Total Node Count     =         33 
+Toggled Node Count   =         25 
+Untoggled Node Count =          8 
+
+Toggle Coverage      =      75.75% (50 of 66 bins)
+
+
+Total Coverage By Design Unit (filtered view): 91.91%
+

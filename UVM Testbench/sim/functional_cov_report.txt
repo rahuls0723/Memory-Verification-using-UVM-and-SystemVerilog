@@ -1,0 +1,214 @@
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /pack1/Ram_Subscriber/cg                         99.73%        100          -    Uncovered            
+    covered/total bins:                                   132        134          -                      
+    missing/total bins:                                     2        134          -                      
+    % Hit:                                             98.50%        100          -                      
+    Coverpoint reset                                  100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint enable                                 100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint Write_en                               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint Data_in                                100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint Address                                100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint Data_out                               100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint Valid_out                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross cross1                                       97.91%        100          -    Uncovered            
+        covered/total bins:                                94         96          -                      
+        missing/total bins:                                 2         96          -                      
+        % Hit:                                         97.91%        100          -                      
+ Covergroup instance \/pack1::Ram_Subscriber::cg       99.73%        100          -    Uncovered            
+    covered/total bins:                                   132        134          -                      
+    missing/total bins:                                     2        134          -                      
+    % Hit:                                             98.50%        100          -                      
+    Coverpoint reset                                  100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin low                                            96          1          -    Covered              
+        bin high                                          383          1          -    Covered              
+        bin lowtohigh                                       1          1          -    Covered              
+    Coverpoint enable                                 100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin low                                            14          1          -    Covered              
+        bin high                                          465          1          -    Covered              
+        bin lowtohigh                                       9          1          -    Covered              
+    Coverpoint Write_en                               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin read                                          240          1          -    Covered              
+        bin write                                         239          1          -    Covered              
+    Coverpoint Data_in                                100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin data0                                         166          1          -    Covered              
+        bin data1                                          87          1          -    Covered              
+        bin data2                                          57          1          -    Covered              
+        bin data3                                          63          1          -    Covered              
+        bin data4                                          64          1          -    Covered              
+        bin data5                                          42          1          -    Covered              
+    Coverpoint Address                                100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin address[0]                                    121          1          -    Covered              
+        bin address[1]                                     14          1          -    Covered              
+        bin address[2]                                     28          1          -    Covered              
+        bin address[3]                                     20          1          -    Covered              
+        bin address[4]                                     27          1          -    Covered              
+        bin address[5]                                     34          1          -    Covered              
+        bin address[6]                                     25          1          -    Covered              
+        bin address[7]                                     26          1          -    Covered              
+        bin address[8]                                     24          1          -    Covered              
+        bin address[9]                                     17          1          -    Covered              
+        bin address[10]                                    23          1          -    Covered              
+        bin address[11]                                    27          1          -    Covered              
+        bin address[12]                                    26          1          -    Covered              
+        bin address[13]                                    28          1          -    Covered              
+        bin address[14]                                    18          1          -    Covered              
+        bin address[15]                                    21          1          -    Covered              
+    Coverpoint Data_out                               100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin dataout0                                      331          1          -    Covered              
+        bin dataout1                                       31          1          -    Covered              
+        bin dataout2                                       42          1          -    Covered              
+        bin dataout3                                       22          1          -    Covered              
+        bin dataout4                                       32          1          -    Covered              
+        bin dataout5                                       21          1          -    Covered              
+    Coverpoint Valid_out                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                       335          1          -    Covered              
+        bin auto[1]                                       144          1          -    Covered              
+    Cross cross1                                       97.91%        100          -    Uncovered            
+        covered/total bins:                                94         96          -                      
+        missing/total bins:                                 2         96          -                      
+        % Hit:                                         97.91%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <address[15],data5>                         2          1          -    Covered              
+            bin <address[14],data5>                         2          1          -    Covered              
+            bin <address[13],data5>                         3          1          -    Covered              
+            bin <address[11],data5>                         5          1          -    Covered              
+            bin <address[10],data5>                         3          1          -    Covered              
+            bin <address[9],data5>                          3          1          -    Covered              
+            bin <address[8],data5>                          2          1          -    Covered              
+            bin <address[7],data5>                          2          1          -    Covered              
+            bin <address[6],data5>                          2          1          -    Covered              
+            bin <address[5],data5>                          2          1          -    Covered              
+            bin <address[4],data5>                          6          1          -    Covered              
+            bin <address[3],data5>                          2          1          -    Covered              
+            bin <address[2],data5>                          3          1          -    Covered              
+            bin <address[1],data5>                          3          1          -    Covered              
+            bin <address[0],data5>                          2          1          -    Covered              
+            bin <address[15],data4>                         3          1          -    Covered              
+            bin <address[14],data4>                         2          1          -    Covered              
+            bin <address[13],data4>                         4          1          -    Covered              
+            bin <address[12],data4>                         4          1          -    Covered              
+            bin <address[11],data4>                         4          1          -    Covered              
+            bin <address[10],data4>                         3          1          -    Covered              
+            bin <address[9],data4>                          3          1          -    Covered              
+            bin <address[8],data4>                          3          1          -    Covered              
+            bin <address[7],data4>                          6          1          -    Covered              
+            bin <address[6],data4>                          2          1          -    Covered              
+            bin <address[5],data4>                          5          1          -    Covered              
+            bin <address[4],data4>                          5          1          -    Covered              
+            bin <address[3],data4>                          3          1          -    Covered              
+            bin <address[2],data4>                         10          1          -    Covered              
+            bin <address[1],data4>                          2          1          -    Covered              
+            bin <address[0],data4>                          5          1          -    Covered              
+            bin <address[15],data3>                         3          1          -    Covered              
+            bin <address[13],data3>                         3          1          -    Covered              
+            bin <address[12],data3>                         4          1          -    Covered              
+            bin <address[11],data3>                         5          1          -    Covered              
+            bin <address[10],data3>                         5          1          -    Covered              
+            bin <address[9],data3>                          3          1          -    Covered              
+            bin <address[8],data3>                          6          1          -    Covered              
+            bin <address[7],data3>                          3          1          -    Covered              
+            bin <address[6],data3>                          4          1          -    Covered              
+            bin <address[5],data3>                          8          1          -    Covered              
+            bin <address[4],data3>                          2          1          -    Covered              
+            bin <address[3],data3>                          7          1          -    Covered              
+            bin <address[2],data3>                          5          1          -    Covered              
+            bin <address[1],data3>                          1          1          -    Covered              
+            bin <address[0],data3>                          4          1          -    Covered              
+            bin <address[15],data2>                         1          1          -    Covered              
+            bin <address[14],data2>                         3          1          -    Covered              
+            bin <address[13],data2>                         5          1          -    Covered              
+            bin <address[12],data2>                         4          1          -    Covered              
+            bin <address[11],data2>                         5          1          -    Covered              
+            bin <address[10],data2>                         4          1          -    Covered              
+            bin <address[9],data2>                          3          1          -    Covered              
+            bin <address[8],data2>                          2          1          -    Covered              
+            bin <address[7],data2>                          6          1          -    Covered              
+            bin <address[6],data2>                          5          1          -    Covered              
+            bin <address[5],data2>                          4          1          -    Covered              
+            bin <address[4],data2>                          1          1          -    Covered              
+            bin <address[3],data2>                          2          1          -    Covered              
+            bin <address[2],data2>                          3          1          -    Covered              
+            bin <address[1],data2>                          3          1          -    Covered              
+            bin <address[0],data2>                          6          1          -    Covered              
+            bin <address[15],data1>                         9          1          -    Covered              
+            bin <address[14],data1>                         7          1          -    Covered              
+            bin <address[13],data1>                         6          1          -    Covered              
+            bin <address[12],data1>                         8          1          -    Covered              
+            bin <address[11],data1>                         3          1          -    Covered              
+            bin <address[10],data1>                         5          1          -    Covered              
+            bin <address[9],data1>                          4          1          -    Covered              
+            bin <address[8],data1>                          7          1          -    Covered              
+            bin <address[7],data1>                          5          1          -    Covered              
+            bin <address[6],data1>                          7          1          -    Covered              
+            bin <address[5],data1>                          9          1          -    Covered              
+            bin <address[4],data1>                         10          1          -    Covered              
+            bin <address[3],data1>                          2          1          -    Covered              
+            bin <address[2],data1>                          3          1          -    Covered              
+            bin <address[1],data1>                          1          1          -    Covered              
+            bin <address[0],data1>                          1          1          -    Covered              
+            bin <address[15],data0>                         3          1          -    Covered              
+            bin <address[14],data0>                         4          1          -    Covered              
+            bin <address[13],data0>                         7          1          -    Covered              
+            bin <address[12],data0>                         6          1          -    Covered              
+            bin <address[11],data0>                         5          1          -    Covered              
+            bin <address[10],data0>                         3          1          -    Covered              
+            bin <address[9],data0>                          1          1          -    Covered              
+            bin <address[8],data0>                          4          1          -    Covered              
+            bin <address[7],data0>                          4          1          -    Covered              
+            bin <address[6],data0>                          5          1          -    Covered              
+            bin <address[5],data0>                          6          1          -    Covered              
+            bin <address[4],data0>                          3          1          -    Covered              
+            bin <address[3],data0>                          4          1          -    Covered              
+            bin <address[2],data0>                          4          1          -    Covered              
+            bin <address[1],data0>                          4          1          -    Covered              
+            bin <address[0],data0>                        103          1          -    Covered              
+            bin <address[12],data5>                         0          1          1    ZERO                 
+            bin <address[14],data3>                         0          1          1    ZERO                 
+
+TOTAL COVERGROUP COVERAGE: 99.73%  COVERGROUP TYPES: 1
